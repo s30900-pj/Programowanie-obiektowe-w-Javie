@@ -1,0 +1,23 @@
+Pytanie. 1: Jaki to może generować problem?
+
+Problemem jest skuteczne zarządzanie relacjami między uczniami, grupami oraz przedmiotami w sytuacjach, gdzie uczniowie należą do wielu grup, grupy mają wiele przedmiotów oraz uczniów.
+
+Pytanie. 2: Czy należy tu użyć klasy abstrakcyjnej, a może zwykły enum wystarczy? Od czego to zależy? Zapoznaj się z dwoma zasadami i je opisz: a) YAGNI oraz b) KISS
+
+a) Zasada YAGNI (You Aren't Gonna Need It) radzi, aby nie dodawać funkcjonalności, które aktualnie nie są potrzebne. Jeśli nie ma potrzeby tworzenia klasy abstrakcyjnej, lepiej jej nie tworzyć.
+
+b) Zasada KISS (Keep It Simple, Stupid) nakazuje używanie prostych i czytelnych rozwiązań. W tym przypadku, używanie enuma jest wystarczająco proste i czytelne, więc nie ma potrzeby tworzenia dodatkowej klasy abstrakcyjnej.
+
+
+Pytanie. 3: Czym to zweryfikować? Equals czy Hashcode? Jaka jest różnica między nimi i co to znaczy że te dwie rzeczy mają między sobą kontrakt?
+W Javie, aby sprawdzić równość obiektów, należy najpierw zaimplementować metodę equals(), a następnie również hashCode(). Metoda equals() porównuje zawartość obiektów, podczas gdy hashCode() generuje unikalny identyfikator dla obiektu.
+
+Kontrakt między metodami equals() i hashCode() mówi, że gdy dwa obiekty są równe za pomocą equals(), ich hashcode musi być taki sam. Natomiast dwa obiekty o tym samym hashcode nie muszą być równoważne. W celu weryfikacji równości obiektów korzystamy z equals(), natomiast do porównywania obiektów w kolekcjach, takich jak HashSet czy HashMap, używamy hashCode(). Dlatego w tym przypadku będziemy korzystać z equals() do weryfikacji równości obiektów.
+
+Pytanie. 4:
+W kontekście zasady YAGNI (You Aren't Gonna Need It), lepszym wyborem jest stworzenie klasy abstrakcyjnej aby zachować elastyczność i umożliwić łatwe dodawanie nowych funkcji w przyszłości, lepiej jest zastosować klasę abstrakcyjną dla modelu sali, nawet jeśli na razie nie potrzebujemy dodatkowych funkcji. Takie podejście lepiej wspiera zasadę YAGNI.
+
+
+
+
+
