@@ -1,0 +1,29 @@
+napisz własnymi słowami
+
+W Javie wyjątki mają dwa rodzaje:
+
+1. Wyjątki kontrolowane (checked exceptions): 
+
+Są to wyjątki, których program musi się wyraźnie domyślać, poprzez użycie bloku try-catch 
+lub poprzez deklarację wyjątku w sygnaturze metody za pomocą słowa kluczowego throws.
+
+Przykładem jest IOException, który może wystąpić podczas operacji wejścia-wyjścia.
+
+2. Wyjątki niekontrolowane (unchecked exceptions): 
+
+Są to wyjątki, które nie muszą być obsługiwane, ale mogą być obsłużone. 
+Nie muszą być deklarowane w sygnaturze metody ani nie muszą być otoczone blokiem try-catch.
+
+Przykładem jest NullPointerException, który może wystąpić, gdy próbujemy odwołać się do metody na obiekcie, który ma wartość null.
+
+Różnica między @NonNull a @NonBlank:
+
+@NonNull: Jest to adnotacja, która informuje, że argument metody nie może mieć wartości null. Jeśli argument przyjmuje wartość null, zostanie zgłoszony wyjątek NullPointerException.
+
+@NonBlank: Jest to adnotacja, która informuje, że argument metody nie może być pusty ani składać się tylko z białych znaków. Jeśli argument jest pusty lub zawiera tylko białe znaki, zostanie zgłoszony wyjątek.
+
+
+
+
+
+
