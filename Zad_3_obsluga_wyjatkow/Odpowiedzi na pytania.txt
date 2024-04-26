@@ -1,20 +1,18 @@
-napisz własnymi słowami
-
-W Javie wyjątki mają dwa rodzaje:
+Wyjątki mają dwa rodzaje:
 
 1. Wyjątki kontrolowane (checked exceptions): 
 
 Są to wyjątki, których program musi się wyraźnie domyślać, poprzez użycie bloku try-catch 
 lub poprzez deklarację wyjątku w sygnaturze metody za pomocą słowa kluczowego throws.
 
-Przykładem jest IOException, który może wystąpić podczas operacji wejścia-wyjścia.
+Przykład: IOException, który może wystąpić podczas operacji wejścia-wyjścia.
 
 2. Wyjątki niekontrolowane (unchecked exceptions): 
 
 Są to wyjątki, które nie muszą być obsługiwane, ale mogą być obsłużone. 
 Nie muszą być deklarowane w sygnaturze metody ani nie muszą być otoczone blokiem try-catch.
 
-Przykładem jest NullPointerException, który może wystąpić, gdy próbujemy odwołać się do metody na obiekcie, który ma wartość null.
+Przykład: NullPointerException, który może wystąpić, gdy próbujemy odwołać się do metody na obiekcie, który ma wartość null.
 
 Różnica między @NonNull a @NonBlank:
 
